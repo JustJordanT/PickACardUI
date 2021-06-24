@@ -1,0 +1,31 @@
+﻿<Window x:Class="PickACardUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PickACardUI"
+        mc:Ignorable="d"
+        Title="Card Picker" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="269*"/>
+            <RowDefinition Height="165*"/>
+        </Grid.RowDefinitions>
+        <Slider x:Name="numberOfCards" HorizontalAlignment="Center" VerticalAlignment="Center" Width="241" Maximum="20" Minimum="1" TickPlacement="BottomRight" AutoToolTipPlacement="TopLeft" Value="1" ValueChanged="numberOfCards_ValueChanged"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,96,0,0" Text="How many cards should I pick🃏🎴 ? " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="mainButton" Content="Pick some cards. 🃏" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="Button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <ListBox x:Name="listOfCards" Grid.Column="1" Margin="20,20,20,20" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,0,0,0" Text="Generated cards." TextWrapping="Wrap" VerticalAlignment="Top" Width="93" Grid.Column="1"/>
+        <TextBlock x:Name="numberSelection" HorizontalAlignment="Left" Margin="293,43,0,0" Grid.Row="1" Text="---" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,43,0,0" Grid.Row="1" Text="Current number of cards picked: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
