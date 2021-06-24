@@ -15,7 +15,7 @@
             <RowDefinition Height="269*"/>
             <RowDefinition Height="165*"/>
         </Grid.RowDefinitions>
-        <Slider x:Name="numberOfCards" HorizontalAlignment="Center" VerticalAlignment="Center" Width="241" Maximum="20" Minimum="1" TickPlacement="BottomRight" AutoToolTipPlacement="TopLeft" Value="1" ValueChanged="numberOfCards_ValueChanged"/>
+        <Slider x:Name="numberOfCards" HorizontalAlignment="Center" VerticalAlignment="Center" Width="241" Maximum="20" Minimum="1" TickPlacement="BottomRight" AutoToolTipPlacement="TopLeft" Value="1"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,96,0,0" Text="How many cards should I pick🃏🎴 ? " TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button x:Name="mainButton" Content="Pick some cards. 🃏" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="Button_Click">
             <Button.Effect>

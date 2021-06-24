@@ -35,9 +35,9 @@ namespace PickACardUI
             }
         }
 
-        private void numberOfCards_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            numberSelection.Text = numberOfCards.Value.ToString("0");
-        }
+        //private void numberOfCards_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        //{
+        //    numberSelection.Text = numberOfCards.Value.ToString("0");
+        //}
     }
 }
